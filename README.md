@@ -13,7 +13,7 @@ This week I made a work day scheduler. The user can enter tasks, meetings, to-do
 
 ## Link to web app
 
-Link to my [Work Day Scheduler](https://murda02.github.io/homework-week-5-dlm/)
+Link to my [Work Day Scheduler](https://murda02.github.io/homework-week-5-work-day-scheduler-dlm/)
 
 ## Author
 
