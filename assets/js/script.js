@@ -1,10 +1,9 @@
 // displays the day in the header
-// var todaysDay = moment().format("dddd");
-// $("#currentDay").text(todaysDay);
-// var currentHour = moment().format("HH");
-// $("#currentHour").text(currentHour);
-$("#currentDay").text("Thursday");
-$("#currentHour").text("14");
+var todaysDay = moment().format("dddd");
+$("#currentDay").text(todaysDay);
+var currentHour = moment().format("HH");
+$("#currentHour").text(currentHour);
+
 
 let button8am = document.querySelector("#btn8am");
 let button9am = document.querySelector("#btn9am");
@@ -29,7 +28,6 @@ let input4pm = document.querySelector("#input4pm");
 let input5pm = document.querySelector("#input5pm");
 
 let currentTime = document.querySelector("#currentHour");
-// console.log('currentTime: ', currentTime.textContent);
 
 renderTask();
 
@@ -132,6 +130,10 @@ let timeSlot2pm = document.querySelector("#time2pm");
 let timeSlot3pm = document.querySelector("#time3pm");
 let timeSlot4pm = document.querySelector("#time4pm");
 let timeSlot5pm = document.querySelector("#time5pm");
+
+// below are if statements that checks the time and displays the current hour in pink
+// timeslots in the future are light green and timeslots in the past are gray
+
 
 if (currentTime.textContent.includes("8")){
     timeSlot8am.setAttribute("style", "background-color: #fadcec"); 
