@@ -1,6 +1,10 @@
 // displays the day in the header
-var todaysDate = moment().format("dddd, MMM Do, YYYY");
-$("#currentDay").text(todaysDate);
+// var todaysDay = moment().format("dddd");
+// $("#currentDay").text(todaysDay);
+// var currentHour = moment().format("HH");
+// $("#currentHour").text(currentHour);
+$("#currentDay").text("Thursday");
+$("#currentHour").text("14");
 
 let button8am = document.querySelector("#btn8am");
 let button9am = document.querySelector("#btn9am");
@@ -23,6 +27,9 @@ let input2pm = document.querySelector("#input2pm");
 let input3pm = document.querySelector("#input3pm");
 let input4pm = document.querySelector("#input4pm");
 let input5pm = document.querySelector("#input5pm");
+
+let currentTime = document.querySelector("#currentHour");
+// console.log('currentTime: ', currentTime.textContent);
 
 renderTask();
 
@@ -113,3 +120,146 @@ function renderTask () {
     input4pm.value = localStorage.getItem("input4pm");
     input5pm.value = localStorage.getItem("input5pm");
 }
+
+let wholeCalendar = document.querySelector("#whole-calendar");
+let timeSlot8am = document.querySelector("#time8am");
+let timeSlot9am = document.querySelector("#time9am");
+let timeSlot10am = document.querySelector("#time10am");
+let timeSlot11am = document.querySelector("#time11am");
+let timeSlot12pm = document.querySelector("#time12pm");
+let timeSlot1pm = document.querySelector("#time1pm");
+let timeSlot2pm = document.querySelector("#time2pm");
+let timeSlot3pm = document.querySelector("#time3pm");
+let timeSlot4pm = document.querySelector("#time4pm");
+let timeSlot5pm = document.querySelector("#time5pm");
+
+if (currentTime.textContent.includes("8")){
+    timeSlot8am.setAttribute("style", "background-color: #fadcec"); 
+    timeSlot9am.setAttribute("style", "background-color: #bfe8ba"); 
+    timeSlot10am.setAttribute("style", "background-color: #bfe8ba");
+    timeSlot11am.setAttribute("style", "background-color: #bfe8ba");
+    timeSlot12pm.setAttribute("style", "background-color: #bfe8ba");
+    timeSlot1pm.setAttribute("style", "background-color: #bfe8ba"); 
+    timeSlot2pm.setAttribute("style", "background-color: #bfe8ba");
+    timeSlot3pm.setAttribute("style", "background-color: #bfe8ba");
+    timeSlot4pm.setAttribute("style", "background-color: #bfe8ba");
+    timeSlot5pm.setAttribute("style", "background-color: #bfe8ba");
+}
+
+if (currentTime.textContent.includes("9")){
+    timeSlot8am.setAttribute("style", "background-color: #c9c9c9"); 
+    timeSlot9am.setAttribute("style", "background-color: #fadcec"); 
+    timeSlot10am.setAttribute("style", "background-color: #bfe8ba");
+    timeSlot11am.setAttribute("style", "background-color: #bfe8ba");
+    timeSlot12pm.setAttribute("style", "background-color: #bfe8ba");
+    timeSlot1pm.setAttribute("style", "background-color: #bfe8ba"); 
+    timeSlot2pm.setAttribute("style", "background-color: #bfe8ba");
+    timeSlot3pm.setAttribute("style", "background-color: #bfe8ba");
+    timeSlot4pm.setAttribute("style", "background-color: #bfe8ba");
+    timeSlot5pm.setAttribute("style", "background-color: #bfe8ba");
+}
+
+if (currentTime.textContent.includes("10")){
+    timeSlot8am.setAttribute("style", "background-color: #c9c9c9"); 
+    timeSlot9am.setAttribute("style", "background-color: #c9c9c9"); 
+    timeSlot10am.setAttribute("style", "background-color: #fadcec");
+    timeSlot11am.setAttribute("style", "background-color: #bfe8ba");
+    timeSlot12pm.setAttribute("style", "background-color: #bfe8ba");
+    timeSlot1pm.setAttribute("style", "background-color: #bfe8ba"); 
+    timeSlot2pm.setAttribute("style", "background-color: #bfe8ba");
+    timeSlot3pm.setAttribute("style", "background-color: #bfe8ba");
+    timeSlot4pm.setAttribute("style", "background-color: #bfe8ba");
+    timeSlot5pm.setAttribute("style", "background-color: #bfe8ba");
+}
+
+if (currentTime.textContent.includes("11")){
+    timeSlot8am.setAttribute("style", "background-color: #c9c9c9"); 
+    timeSlot9am.setAttribute("style", "background-color: #c9c9c9"); 
+    timeSlot10am.setAttribute("style", "background-color: #c9c9c9");
+    timeSlot11am.setAttribute("style", "background-color: #fadcec");
+    timeSlot12pm.setAttribute("style", "background-color: #bfe8ba");
+    timeSlot1pm.setAttribute("style", "background-color: #bfe8ba"); 
+    timeSlot2pm.setAttribute("style", "background-color: #bfe8ba");
+    timeSlot3pm.setAttribute("style", "background-color: #bfe8ba");
+    timeSlot4pm.setAttribute("style", "background-color: #bfe8ba");
+    timeSlot5pm.setAttribute("style", "background-color: #bfe8ba");
+}
+
+if (currentTime.textContent.includes("12")){
+    timeSlot8am.setAttribute("style", "background-color: #c9c9c9"); 
+    timeSlot9am.setAttribute("style", "background-color: #c9c9c9"); 
+    timeSlot10am.setAttribute("style", "background-color: #c9c9c9");
+    timeSlot11am.setAttribute("style", "background-color: #c9c9c9");
+    timeSlot12pm.setAttribute("style", "background-color: #fadcec");
+    timeSlot1pm.setAttribute("style", "background-color: #bfe8ba"); 
+    timeSlot2pm.setAttribute("style", "background-color: #bfe8ba");
+    timeSlot3pm.setAttribute("style", "background-color: #bfe8ba");
+    timeSlot4pm.setAttribute("style", "background-color: #bfe8ba");
+    timeSlot5pm.setAttribute("style", "background-color: #bfe8ba");
+}
+
+if (currentTime.textContent.includes("13")){
+    timeSlot8am.setAttribute("style", "background-color: #c9c9c9"); 
+    timeSlot9am.setAttribute("style", "background-color: #c9c9c9"); 
+    timeSlot10am.setAttribute("style", "background-color: #c9c9c9");
+    timeSlot11am.setAttribute("style", "background-color: #c9c9c9");
+    timeSlot12pm.setAttribute("style", "background-color: #c9c9c9");
+    timeSlot1pm.setAttribute("style", "background-color: #fadcec"); 
+    timeSlot2pm.setAttribute("style", "background-color: #bfe8ba");
+    timeSlot3pm.setAttribute("style", "background-color: #bfe8ba");
+    timeSlot4pm.setAttribute("style", "background-color: #bfe8ba");
+    timeSlot5pm.setAttribute("style", "background-color: #bfe8ba");
+}
+
+if (currentTime.textContent.includes("14")){
+    timeSlot8am.setAttribute("style", "background-color: #c9c9c9"); 
+    timeSlot9am.setAttribute("style", "background-color: #c9c9c9"); 
+    timeSlot10am.setAttribute("style", "background-color: #c9c9c9");
+    timeSlot11am.setAttribute("style", "background-color: #c9c9c9");
+    timeSlot12pm.setAttribute("style", "background-color: #c9c9c9");
+    timeSlot1pm.setAttribute("style", "background-color: #c9c9c9"); 
+    timeSlot2pm.setAttribute("style", "background-color: #fadcec");
+    timeSlot3pm.setAttribute("style", "background-color: #bfe8ba");
+    timeSlot4pm.setAttribute("style", "background-color: #bfe8ba");
+    timeSlot5pm.setAttribute("style", "background-color: #bfe8ba");
+}
+
+if (currentTime.textContent.includes("15")){
+    timeSlot8am.setAttribute("style", "background-color: #c9c9c9"); 
+    timeSlot9am.setAttribute("style", "background-color: #c9c9c9"); 
+    timeSlot10am.setAttribute("style", "background-color: #c9c9c9");
+    timeSlot11am.setAttribute("style", "background-color: #c9c9c9");
+    timeSlot12pm.setAttribute("style", "background-color: #c9c9c9");
+    timeSlot1pm.setAttribute("style", "background-color: #c9c9c9"); 
+    timeSlot2pm.setAttribute("style", "background-color: #c9c9c9");
+    timeSlot3pm.setAttribute("style", "background-color: #fadcec");
+    timeSlot4pm.setAttribute("style", "background-color: #bfe8ba");
+    timeSlot5pm.setAttribute("style", "background-color: #bfe8ba");
+}
+
+if (currentTime.textContent.includes("16")){
+    timeSlot8am.setAttribute("style", "background-color: #c9c9c9"); 
+    timeSlot9am.setAttribute("style", "background-color: #c9c9c9"); 
+    timeSlot10am.setAttribute("style", "background-color: #c9c9c9");
+    timeSlot11am.setAttribute("style", "background-color: #c9c9c9");
+    timeSlot12pm.setAttribute("style", "background-color: #c9c9c9");
+    timeSlot1pm.setAttribute("style", "background-color: #c9c9c9"); 
+    timeSlot2pm.setAttribute("style", "background-color: #c9c9c9");
+    timeSlot3pm.setAttribute("style", "background-color: #c9c9c9");
+    timeSlot4pm.setAttribute("style", "background-color: #fadcec");
+    timeSlot5pm.setAttribute("style", "background-color: #bfe8ba");
+}
+
+if (currentTime.textContent.includes("17")){
+    timeSlot8am.setAttribute("style", "background-color: #c9c9c9"); 
+    timeSlot9am.setAttribute("style", "background-color: #c9c9c9"); 
+    timeSlot10am.setAttribute("style", "background-color: #c9c9c9");
+    timeSlot11am.setAttribute("style", "background-color: #c9c9c9");
+    timeSlot12pm.setAttribute("style", "background-color: #c9c9c9");
+    timeSlot1pm.setAttribute("style", "background-color: #c9c9c9"); 
+    timeSlot2pm.setAttribute("style", "background-color: #c9c9c9");
+    timeSlot3pm.setAttribute("style", "background-color: #c9c9c9");
+    timeSlot4pm.setAttribute("style", "background-color: #c9c9c9");
+    timeSlot5pm.setAttribute("style", "background-color: #fadcec");
+}
+

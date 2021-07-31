@@ -4,7 +4,8 @@ This week I made a work day scheduler. The user can enter tasks, meetings, to-do
 
 ## Features 
 
-* The current date is displayed in the header of the web page
+* The current day is displayed in the header of the web page
+* The current hour is highlighted pink, future timeslots are lightgreen and timeslots in the past are gray
 * The user can enter input to each timeslot and that information will persist even after the web page is reloaded
 
 ## Screenshot

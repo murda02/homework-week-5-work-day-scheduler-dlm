@@ -33,63 +33,64 @@
 
   <body>
     <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
+      <h1 class="display-3" style="margin-top: 60px;">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
+      <p id="currentHour" class="lead"></p>
     </header>
     <div class="container">
       
-      <table class="table table-bordered table-hover">
+      <table class="table table-bordered table-hover" id="whole-calendar">
         <tbody>
-          <tr>
-            <th scope="row" style="width:  10%"">8am</th>
-            <td style="width:  80%"><input type="text" style="width: 100%; height: 150%" class="form-control" id="input8am"></td>
-            <td style="width:  10%"><button type="button" class="btn btn-primary" id="btn8am">Save</button></td>
+          <tr id="time8am">
+            <th scope="row" style="width:  5%"">8am</th>
+            <td style="width:  90%"><input type="text" style="width: 100%; height: 150%" class="form-control" id="input8am"></td>
+            <td style="width:  5%"><button type="button" class="btn btn-primary" id="btn8am">Save</button></td>
           </tr>
-          <tr>
-            <th scope="row" style="width:  10%"">9am</th>
-            <td style="width:  80%"><input type="text" style="width: 100%; height: 150%" class="form-control" id="input9am"></td>
-            <td style="width:  10%"><button type="button" class="btn btn-primary" id="btn9am">Save</button></td>
+          <tr id="time9am">
+            <th scope="row" style="width:  5%"">9am</th>
+            <td style="width:  90%"><input type="text" style="width: 100%; height: 150%" class="form-control" id="input9am"></td>
+            <td style="width:  5%"><button type="button" class="btn btn-primary" id="btn9am">Save</button></td>
           </tr>
-          <tr>
-            <th scope="row" style="width:  10%"">10am</th>
-            <td style="width:  80%"><input type="text" style="width: 100%; height: 150%" class="form-control" id="input10am"></td>
-            <td style="width:  10%"><button type="button" class="btn btn-primary" id="btn10am">Save</button></td>
+          <tr id="time10am">
+            <th scope="row" style="width:  5%"">10am</th>
+            <td style="width:  90%"><input type="text" style="width: 100%; height: 150%" class="form-control" id="input10am"></td>
+            <td style="width:  5%"><button type="button" class="btn btn-primary" id="btn10am">Save</button></td>
           </tr>
-          <tr>
-            <th scope="row" style="width:  10%"">11am</th>
-            <td style="width:  80%"><input type="text" style="width: 100%; height: 150%" class="form-control" id="input11am"></td>
-            <td style="width:  10%"><button type="button" class="btn btn-primary" id="btn11am">Save</button></td>
+          <tr id="time11am">
+            <th scope="row" style="width:  5%"">11am</th>
+            <td style="width:  90%"><input type="text" style="width: 100%; height: 150%" class="form-control" id="input11am"></td>
+            <td style="width:  5%"><button type="button" class="btn btn-primary" id="btn11am">Save</button></td>
           </tr>
-          <tr>
-            <th scope="row" style="width:  10%"">12pm</th>
-            <td style="width:  80%"><input type="text" style="width: 100%; height: 150%" class="form-control" id="input12pm"></td>
-            <td style="width:  10%"><button type="button" class="btn btn-primary" id="btn12pm">Save</button></td>
+          <tr id="time12pm">
+            <th scope="row" style="width:  5%"">12pm</th>
+            <td style="width:  90%"><input type="text" style="width: 100%; height: 150%" class="form-control" id="input12pm"></td>
+            <td style="width:  5%"><button type="button" class="btn btn-primary" id="btn12pm">Save</button></td>
           </tr>
-          <tr>
-            <th scope="row" style="width:  10%"">1pm</th>
-            <td style="width:  80%"><input type="text" style="width: 100%; height: 150%" class="form-control" id="input1pm"></td>
-            <td style="width:  10%"><button type="button" class="btn btn-primary" id="btn1pm">Save</button></td>
+          <tr id="time1pm">
+            <th scope="row" style="width:  5%"">1pm</th>
+            <td style="width:  90%"><input type="text" style="width: 100%; height: 150%" class="form-control" id="input1pm"></td>
+            <td style="width:  5%"><button type="button" class="btn btn-primary" id="btn1pm">Save</button></td>
           </tr>
-          <tr>
-            <th scope="row" style="width:  10%"">2pm</th>
-            <td style="width:  80%"><input type="text" style="width: 100%; height: 150%" class="form-control" id="input2pm"></td>
-            <td style="width:  10%"><button type="button" class="btn btn-primary" id="btn2pm">Save</button></td>
+          <tr id="time2pm">
+            <th scope="row" style="width:  5%"">2pm</th>
+            <td style="width:  90%"><input type="text" style="width: 100%; height: 150%" class="form-control" id="input2pm"></td>
+            <td style="width:  5%"><button type="button" class="btn btn-primary" id="btn2pm">Save</button></td>
           </tr>
-          <tr>
-            <th scope="row" style="width:  10%"">3pm</th>
-            <td style="width:  80%"><input type="text" style="width: 100%; height: 150%" class="form-control" id="input3pm"></td>
-            <td style="width:  10%"><button type="button" class="btn btn-primary" id="btn3pm">Save</button></td>
+          <tr id="time3pm">
+            <th scope="row" style="width:  5%"">3pm</th>
+            <td style="width:  90%"><input type="text" style="width: 100%; height: 150%" class="form-control" id="input3pm"></td>
+            <td style="width:  5%"><button type="button" class="btn btn-primary" id="btn3pm">Save</button></td>
           </tr>
-          <tr>
-            <th scope="row" style="width:  10%"">4pm</th>
-            <td style="width:  80%"><input type="text" style="width: 100%; height: 150%" class="form-control" id="input4pm"></td>
-            <td style="width:  10%"><button type="button" class="btn btn-primary" id="btn4pm">Save</button></td>
+          <tr id="time4pm">
+            <th scope="row" style="width:  5%"">4pm</th>
+            <td style="width:  90%"><input type="text" style="width: 100%; height: 150%" class="form-control" id="input4pm"></td>
+            <td style="width:  5%"><button type="button" class="btn btn-primary" id="btn4pm">Save</button></td>
           </tr>
-          <tr>
-            <th scope="row" style="width:  10%"">5pm</th>
-            <td style="width:  80%"><input type="text" style="width: 100%; height: 150%" class="form-control" id="input5pm"></td>
-            <td style="width:  10%"><button type="button" class="btn btn-primary" id="btn5pm">Save</button></td>
+          <tr id="time5pm">
+            <th scope="row" style="width:  5%"">5pm</th>
+            <td style="width:  90%"><input type="text" style="width: 100%; height: 150%" class="form-control" id="input5pm"></td>
+            <td style="width:  5%"><button type="button" class="btn btn-primary" id="btn5pm">Save</button></td>
           </tr>
         </tbody>
       </table>

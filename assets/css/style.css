@@ -82,3 +82,48 @@ textarea {
   border-color: #00eeff;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 153, 255, 0.6);
 }
+
+#input8am {
+  background-color: inherit;
+}
+
+#input9am {
+  background-color: inherit;
+}
+
+#input10am {
+  background-color: inherit;
+}
+
+#input11am {
+  background-color: inherit;
+}
+
+#input12pm {
+  background-color: inherit;
+}
+
+#input1pm {
+  background-color: inherit;
+}
+
+#input2pm {
+  background-color: inherit;
+}
+
+#input3pm {
+  background-color: inherit;
+}
+#input4pm {
+  background-color: inherit;
+}
+
+#input5pm {
+  background-color: inherit;
+}
+
+#currentHour {
+  color: white;
+  /* color: black; */
+}
+
